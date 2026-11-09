@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Saba ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts" id="hearts"></div>
+
+    <nav class="navbar">
+        <div class="logo">Saba <span>❤️</span></div>
+        <button class="music-btn" id="musicBtn">♫ Play Music</button>
+    </nav>
+<audio id="backgroundMusic" autoplay loop>
+    <source src="saba.mp4" type="audio/mpeg">
+</audio>
+    <main>
+
+        <!-- PAGE 1: WELCOME -->
+        <section class="page active" id="home">
+            <div class="content">
+                <p class="small-title">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+                <h1>❤️Happy Birthday<br><span>Meri Shahzadi❤️</span></h1>
+                <p class="description">
+                    Today is not an ordinary day. Today is the birthday
+                    of the most special person in my life.💕🥰😘
+                    <br>Hapyyyyyyyyyyyyyyyyyyy <br> Barthdayyyyyyyyyyyyyyyyyyy 🎂 <br>  Tooooooooooooooooooooooooooo <br> Youhhhhhhhhh 🌸💕🥰🎀<br> My Sweetuuuu🌸💕🥰💕<br>  My Jaaneman 🌸💕🥰🌹 🌹 My Babuuuhh💖💖🌸💕🥰
+                </p>
+                
+                <button class="main-btn" onclick="goToPage('surprise')">
+                    Open Your Surprise ✨
+                </button>
+            </div>
+            <div class="big-heart">❤️</div>
+        </section>
+<!-- PAGE 2: SURPRISE -->
+<section class="page" id="surprise">
+    <div class="content">
+
+        <p class="small-title">A LITTLE SURPRISE MY_JAN ❤️💞</p>
+
+        <h2>My Phool Jaisi Bachawww 😘🫠💕</h2>
+
+        <p class="description">
+            I have prepared something special for my_babu.
+            Every little part of this website is made
+            to celebrate your beautiful day. 💕
+        </p>
+
+        <div class="gift" id="gift">🎁</div>
+
+        <button class="main-btn" id="giftButton" onclick="openGift()">
+            Open Your Gift 🎀
+        </button>
+
+        <!-- SPECIAL ANIMATION -->
+        <div id="giftMessage" class="hidden message">
+
+            <h2>For You,My_Life🔗🩷</h2>
+
+            <div class="love-animation">
+                <span>🌹</span>
+                <span>💖</span>
+                <span>🍫</span>
+                <span>💕</span>
+                <span>🌹</span>
+                <span>🍬</span>
+                <span>❤️</span>
+                <span>🍫</span>
+                <span>🌷</span>
+                <span>💗</span>
+            </div>
+
+            <h3>Lots of Love for You! 💞</h3> <br> 
+            <p>تم ❤️✨۔۔ تم، تمہاری آواز، تمہارا وجود حتیٰ کہ تمہارا احساس بھی مجھے سکون دیتا ہے۔
+
+ایک ہی شخص پہ ختم ہو گئی محبت میری ❤️ وہ ایک ہی شخص میرے لیے کل کائنات بن گیا 🌍
+
+عام سا ہے سارا جہاں میرے لیے فقط خاص ہو تم Tum jan ho meri ❤️
+
+کبھی تم نے محبت دیکھی ہے 👀❤️ میں نے دیکھی ہے 😍👀❤️ تمہارا چہرہ محبت ہے 😉✨
+
+تم نے کبھی محبت سنی ہے 🌈 میں نے سنی ہے 🥺
+
+ہماری باتیں محبت ہیں 😌💋🤗
+
+تم نے کبھی محبت کو مسکراتے ہوئے دیکھا ہے 🥺 میں نے دیکھا ہے 😍✨ تمہارا 💋🦋 مسکرانا ہی محبت ہے 🌻
+
+تم نے کبھی محبت محسوس کی ہے 🙂❤️🥺 میں نے محبت محسوس کی ہے 😍🤗 تمہارا وجود محبت ہے 🥺
+
+تم نے کبھی محبت کی ہے ❤️✨🤍 ہاں 🦋❤️
+
+میں نے محبت کی ہے 💋🌈 تم ہی تو محبت ہو 😍
+
+👀😍🥺 میری جان میری 👻 میری زندگی میرا سکون 😘
+
+Tum jan ho meri 😻❤️✨🌻🌈🦋
+
+🥺❤️🌈🦋✨ </p>
+
+        </div>
+
+        <button class="next-btn" onclick="goToPage('cake')">
+            Next Surprise →
+        </button>
+
+    </div>
+</section>
+<!-- PAGE 3: CAKE -->
+<section class="page" id="cake">
+    <div class="content">
+
+        <p class="small-title">LET'S CELEBRATE</p>
+
+        <h2>A Cake Just For You 🎂</h2>
+
+        <p class="description" id="cakeDescription">
+            Close your eyes, make a wish and blow out your candle!
+        </p>
+
+  <div class="cake-scene" id="cakeScene">
+
+    <div class="cake" id="birthdayCake">
+
+        <div class="flame" id="flame"></div>
+        <div class="candle"></div>
+
+        <div class="cake-top"></div>
+        <div class="cake-body"></div>
+        <div class="cake-plate"></div>
+
+        <!-- Visible cutting line -->
+        <div class="real-cut-line" id="realCutLine"></div>
+
+    </div>
+
+    <!-- Knife -->
+    <div class="cake-knife" id="cakeKnife">🔪</div>
+
+</div>
+
+        <button class="main-btn" id="blowButton" onclick="blowCandle()">
+            Blow The Candle 💨
+        </button>
+
+        <button class="main-btn" id="cutCakeBtn" onclick="cutCake()">
+            Cut the Cake 🎂
+        </button>
+
+        <p id="cakeMessage" class="message"></p>
+
+      
+        <div id="birthdaySpecialMessage" class="birthday-special-message">
+
+    <h2>The King Of My Heart 🌸❤️‍🔥🤡🥰🫶😘🥳🥂💋💌</h2>
+
+    <p>
+    Happiest Birthday to most favrt person of my life!... 💕🌎
+    i don't know where to start but I have a lot to say to U...🤌🏻🎀🌤️💐💗🥰
+    <br><br>
+
+    On U'r birthday, I pray you get everything U've been working for and everything U'r heart quietly wishes for. 🌞❤️
+    U deserve ease, success, and all the happiness that life can offer. 🪻💋🫶
+    <br><br>
+
+    💗👀💝 "Tum ho to lagta hai har cheez mukammal....
+    Tumhare bina sab kuch adhoora sa lagta hai.... 💍🥺💗💯✨
+    <br><br>
+
+    Happy Birthday to the King of my heart 👑 The man of my dreams 🎀
+    And the love of my life 💋 You mean the world 🌎
+    I can't imagine my life without you. 🥺
+    Today is U'r day, but honestly, every day feels special because of U. 🥰😘
+    <br><br>
+
+    تم ہی پر ختم ہے سب حدیں محبت کی! 🥺💝
+    تم سے ہے، تم میں، تم پر ختم ہو جاتی ہے یہ دنیا میری ❤️😘
+    <br><br>
+
+    🤡💗On this special day, I just want to remind you how incredible special you are to me,
+    💕💝and the love that fills my heart endless joy ❤️
+    I'm so grateful to have you in my life and I can't wait to make more beautiful memories together 🥺😊💞
+    Wishing you all the happiness, love, and success in the world. 🎁🥰
+    Wish u all the best in life ❤️ may all ur dream and wishes come true
+    hope ur special day brings ur heart desire
+    May your day be filled with love and laughter. 😘🥺💝
+    <br><br>
+
+    🥺6🌠👀 میں کیا کہوں کہ اس کا ساتھ کیسا ہے!
+    ✨🌎❤️ وہ ایک شخص پوری کائنات جیسا ہے
+    <br><br>
+
+    Im Soo much lucky to have a caring, 😊 loving, 😍 kind, 😇
+    kharos, 🤐 sweet 😘 annoying 😜and handsome 🥰man in my life💋
+    <br><br>
+
+    میری عام سی زندگی میں بہت خاص ہو تم..😊
+    <br><br>
+
+    Enjoy your day.... Once again....
+    <br><br>
+
+    Happy birthday jnab 😘😘💋
+    </p>
+
+</div>
+  <button class="next-btn" onclick="goToPage('memories')">
+            Next Page →
+        </button>
+
+    </div>
+</section>
+
+        <!-- PAGE 4: MEMORIES -->
+        <section class="page" id="memories">
+            <div class="content">
+                <p class="small-title">BEAUTIFUL MOMENTS</p>
+                <h2>Our Memory Gallery 📸</h2>
+                <p class="description">
+                    Every picture tells a story. Add your favourite
+                    memories to make this page yours.
+                </p>
+
+                <div class="gallery">
+                    <label class="photo-card">
+                        <span>❤️ Memory One</span>
+                        <img id="photo1" alt="Memory one">
+                        <input type="file" accept="image/*"
+                               onchange="previewPhoto(event, 'photo1')">
+                    </label>
+
+                    <label class="photo-card">
+                        <span>💕 Memory Two</span>
+                        <img id="photo2" alt="Memory two">
+                        <input type="file" accept="image/*"
+                               onchange="previewPhoto(event, 'photo2')">
+                    </label>
+
+                    <label class="photo-card">
+                        <span>🌹 Memory Three</span>
+                        <img id="photo3" alt="Memory three">
+                        <input type="file" accept="image/*"
+                               onchange="previewPhoto(event, 'photo3')">
+                    </label>
+                        <label class="photo-card">
+        <span>💖 Memory Four</span>
+        <img id="photo4" alt="Memory four">
+        <input type="file" accept="image/*"
+               onchange="previewPhoto(event, 'photo4')">
+    </label>
+
+    <label class="photo-card">
+        <span>🥰 Memory Five</span>
+        <img id="photo5" alt="Memory five">
+        <input type="file" accept="image/*"
+               onchange="previewPhoto(event, 'photo5')">
+    </label>
+
+    <label class="photo-card">
+        <span>💗 Memory Six</span>
+        <img id="photo6" alt="Memory six">
+        <input type="file" accept="image/*"
+               onchange="previewPhoto(event, 'photo6')">
+    </label>
+                </div>
+            
+
+                <button class="next-btn" onclick="goToPage('letter')">
+                    Read Your Letter →
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 5: LETTER -->
+        <section class="page" id="letter">
+            <div class="content">
+                <p class="small-title">WORDS FROM MY HEART</p>
+                <h2>A Letter For My Phol jesa Bachawww 💌</h2>
+
+                <div class="letter">
+                    <h3>Meri Jannnnnnnnnnn❤️</h3>
+
+                    <p>
+                       So finally THE MOST Important Special Day
+Your Birthday has come 🥂
+• 🥺🌐 MERI Zindagiiii 💋💗 <br>
+
+You_are_my_Love🌹<br>
+You_are_My_Life🔗🩷<br>
+You_Are_MY_World🌐💗<br>
+You_Are_my_dream✨🌼<br>
+You_Are_my_soul💗<br>
+You_Are_my_heart❤️🥰<br>
+You_Are_my_Sunshine✨❤️<br>
+You_are_my_Happiness🥰🥰<br>
+You_my_whole_future💞💋<br>
+You_are_my_baby ❤️💞<br>
+You_are_my_babu 💕🌸🥰🤗<br>
+You_are_my_phol jesa bachawww 😘 🫠 <br>
+You_are_my_jan 🫂💟💞🌸💕🥰<br>
+...❤️YOUR MY EVERYTHING 🌍...<br> <br>
+
+🥺❤️c❤️🥺Wishing You a very very Happiest Birthday 😘❤️to The Most loving💋🥰, Caring 🥰and Understanding ✨🥺 person 🫶💗 meri jaaaaaaaaaaaaaaan 🥺✨ May Allah always blessing you shona 💗🥺 with good health🥰 and achieve your goals ✨🌼 in your life whatever you want and fly high with happiness 💕😘You the most special person in my life 🌍 I LOVE YOU SO MUCHHHHH MERE WIFE GGG 💋✨🥰stay always happy stay Always with me🤞💗🫶and I wish meri jaaan your happiness never end 🫶💙you are so amazing meri zindagi 😘🫂you are my HEROIN 😎❤️ you are my handsome 💗🥺 you are my whole future 💗you are intelligent 💗💋you are wonderful ✨⚡you are the bestest think happened to me 🫶👀🥺👀You are the King 👑 of my heart 🥰The Girl of my dreams 🧡🌼✨and the love of my life 🌐💋⚡ You Mean the world 🌐 to me my baby💋😘...I can't imagine my Life without you my HEARTBEAT ❤️🌼 I'm incomplete without you meri zindagi 😘💕🥰 I feel 🥰💗🫶I'm the luckiest♡💗 boy to have you in my life mere SHONA 💋💞🕊️ Thankyou for always being there 💞🕊️✨ Thankyou for care , support and possive begum 😘😎💋I wish your all dream full fills 🥰 specially me 🥰🌹<br> <br>
+
+I Love You forever ♾️🫂 my heart 💜❤️💋❤️ I missssssss youuuuuu soooooo MUCHHHHHH meri jaaaaaaaaaaan 🌐🫶💗🫂✨💗🌼Once again wish you very very happy birthday my beautiful mohtarma 🫂 👀😎🥺💋🫶
+                    </p>
+
+                    <p>
+                        On your special day, I want to remind you
+                        how precious and important you are.
+                        Your smile makes ordinary moments beautiful,
+                        and your presence makes life more meaningful.
+                    </p>
+
+                    <p>
+                        I wish you endless happiness, beautiful memories,
+                        success in every dream and countless reasons
+                        to smile.
+                    </p>
+
+                    <p>
+                        May every coming year bring more joy,
+                        peace and beautiful moments into your life.
+                    </p>
+
+                    <h3 class="signature">
+                        With all my love ❤️
+                    </h3>
+                </div>
+
+                <button class="main-btn" onclick="goToPage('forever')">
+                    One Last Surprise ❤️
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 6: FINAL -->
+        <section class="page" id="forever">
+            <div class="content">
+                <p class="small-title">MY FINAL BIRTHDAY WISH</p>
+                <h1>Forever Special<br><span>Saba ❤️</span></h1>
+
+                <div class="final-heart">💖</div>
+
+                <p class="description">
+                    🖤 دیتے ہیں ہم دعا تمہیں عمر دراز کی 🖤
+
+Happy Birthday 🎂 Dear sukoon e Qalb❤️ May Allah swt shower his Endless blessings on you❤️
+
+Aapke birthday ka din mere liye kisi muqaddas Dua ki Qubooliyat ki tarah h❤️. Meri Duaaye humesha Aapke sath h❤️. Aapki zindagi humesha khushiyon se bharpur ho❤️.
+
+Aapke Dil ki duniya humesha Mohabbaton se saji rahe... baharein Aap pr fida ho...❤️ Aap ki aankhon ki chamak Ta hayat rahe...❤️
+
+Jo darwaza khulta h wo bnd b hota hai... AAP pr kbhi bnd darwaze pr dastak dene ki nobat na aaye...❤️
+
+Rahmaton k darwaze aap pr khule...or unhen kbhi band na hone ka hukm mile...❤️
+                    Happy Birthday once again!
+                    May your life always be filled with love,
+                    laughter, peace and beautiful moments.
+                </p>
+
+                <h2 class="glow-text">You Are Special! ✨</h2>
+
+                <button class="main-btn" onclick="celebrate()">
+                    Celebrate Again 🎉
+                </button>
+
+                <button class="next-btn" onclick="goToPage('home')">
+                    Back To Beginning ↺
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="page-indicator" id="pageIndicator">
+        <span class="dot active-dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
